@@ -4,6 +4,9 @@ class Doggo {
   constructor() {
     this.apiUrl = "https://dog.ceo/api";
     this.imgEl = document.querySelector(".featured-dog img");
+    this.backgroundEl = document.querySelector(
+      ".featured-dog__background"
+    );
 
     this.init();
   }
@@ -28,7 +31,10 @@ class Doggo {
   }
 
   init() {
-    this.getRandomImage().then(src => this.imgEl.setAttribute("src", src));
+    this.getRandomImage().then(src => {
+      this.imgEl.setAttribute("src", src);
+      this.backgroundEl.style.background = `url(${src})`;
+    });
 
     this.listBreeds().then(breeds => console.log(breeds));
   }
