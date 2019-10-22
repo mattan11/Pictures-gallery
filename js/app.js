@@ -8,9 +8,19 @@ class Doggo {
       ".featured-dog__background"
     );
     this.tilesEl = document.querySelector(".tiles");
+    this.spinnerEl = document.querySelector(".spinner");
 
     this.init();
   }
+
+  showLoading() {
+    this.spinnerEl.classList.add("spinner--visible");
+  }
+
+  hideLoading() {
+    this.spinnerEl.classList.remove("spinner--visible");
+  }
+
   listBreeds() {
     return fetch(`${this.apiUrl}/breeds/list/all`)
       .then(resp => resp.json())
@@ -32,9 +42,11 @@ class Doggo {
   }
 
   init() {
+    this.showLoading();
     this.getRandomImage().then(src => {
       this.imgEl.setAttribute("src", src);
       this.backgroundEl.style.background = `url(${src})`;
+      this.hideLoading();
     });
 
     this.showAllBreeds();
@@ -56,11 +68,15 @@ class Doggo {
 
     const tileContent = document.createElement("div");
     tileContent.classList.add("tiles__tile-content");
+
     tileContent.innerText = name;
     tileContent.addEventListener("click", () => {
+      window.scrollTo(0, 0);
+      this.showLoading();
       this.getRandomImageByBreed(type).then(src => {
         this.imgEl.setAttribute("src", src);
         this.backgroundEl.style.background = `url(${src})`;
+        this.hideLoading();
       });
     });
 
