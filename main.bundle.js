@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "d1c8360797a045fa5925";
+/******/ 	var hotCurrentHash = "475c41f4b6a867c8aa9e";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -784,7 +784,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/webpack-demo/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
