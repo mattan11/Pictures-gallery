@@ -4,7 +4,7 @@ This project contains dogs gallery fetched from
 ## Installing rwd calories table
 To install this project at your computer clone this repository and install all required dependencies.
 
-$ git clone https://github.com/mattan11/Image-slider
+$ git clone https://github.com/mattan11/Pictures-gallery
 
 $ npm install
 
