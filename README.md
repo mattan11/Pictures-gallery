@@ -1,5 +1,5 @@
 # Dogs Pictures Gallery
-This project contains dogs gallery fetched from
+This project contains dogs gallery fetched from https://dog.ceo/api.
 
 ## Installing rwd calories table
 To install this project at your computer clone this repository and install all required dependencies.
