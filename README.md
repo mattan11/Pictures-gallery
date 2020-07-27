@@ -9,16 +9,16 @@ $ git clone https://github.com/mattan11/Pictures-gallery
 $ npm install
 
 ## Github Pages
-This project is located also at github pages at https://mattan11.github.io/Image-slider/
+This project is located also at github pages at https://mattan11.github.io/Pictures-gallery/
 
 ## Technologies used by project
 HTML
 
 SCSS
 
-JavaScript
+JavaScript - AJAX
 
 Webpack
 
 ## What have I learned
-In this project I developed my JavaScript skill by adding touch handle on mobile phones.
+I learned how to fetch content from external API
